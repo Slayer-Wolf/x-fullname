@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./app.css";
-export function App() {
+import "./App.css";
+
+const App = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
@@ -54,4 +55,5 @@ export function App() {
       {fullName && <div className="full-name">{fullName}</div>}
     </div>
   );
-}
+};
+export default App;
